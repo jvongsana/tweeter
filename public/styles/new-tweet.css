@@ -1,0 +1,26 @@
+.tweet-compose {
+  border-bottom: solid 5px grey ;
+}
+ 
+#tweet-text {
+  width: 100%;
+  resize: none;
+  border: none;
+  background-color: inherit;
+}
+
+.post-characteristics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet-button {
+  background-color: #4056a1;
+  color: white;
+  border: none;
+  font-family: 'Bungee', cursive;
+}
+
+.counter {
+  font-family: 'Bungee', cursive;
+}
