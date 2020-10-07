@@ -1,0 +1,82 @@
+article.tweet {
+  margin: 30px 0px;
+  border: 5px solid grey;
+}
+
+.tweet:hover {
+  box-shadow: 10px 10px rgba(98, 125, 168, 0.4);
+  font-weight: bold;
+}
+.tweet:hover span.username {
+  display: block;
+}
+
+.tweet:hover a img.flag-img {
+  content: url('../images/flag\ hovered.png');
+}
+
+.tweet:hover a img.retweet-img {
+  content: url('../images/retweet\ hovered.png');
+}
+
+.tweet:hover a img.heart-img {
+  content: url('../images/heart\ hovered.png');
+}
+
+p.tweet-content {
+  margin: 10px;
+  padding: 15px;
+  border-bottom: 5px solid grey;
+}
+
+article.tweet header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-image: none;
+  height: auto;
+  margin: auto;
+}
+
+span {
+  margin: 0px 10px;
+}
+
+span.username {
+  display: none;
+  margin-right: 15px;
+}
+
+div.tweeter-pic {
+  display: flex; 
+  align-items: center;
+}
+
+article.tweet footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 15px;
+}
+
+footer span {
+  font-size: 15px;
+}
+
+div.interaction-icons {
+  display: flex;
+  align-items: center;
+}
+
+div.interaction-icons a {
+  padding: 0px 3px;
+}
+
+
+/* span.tweet-age {
+  font-size: 15px;
+  margin: 10px;
+  padding: 15px;
+} */
+
