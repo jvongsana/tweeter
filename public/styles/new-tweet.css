@@ -1,3 +1,14 @@
+section.compose-tweet {
+  display: none;
+}
+
+div.error-message {
+  display: none;
+  margin-top: 20px;
+  padding-left: 10px;
+  border: solid 3px red;
+}
+
 div.tweet-compose {
   border-bottom: solid 5px grey ;
 }
@@ -24,3 +35,4 @@ button.tweet-button {
 output.counter {
   font-family: 'Bungee', cursive;
 }
+

@@ -10,9 +10,13 @@ nav {
   font-family: 'Bungee', cursive;
   color: #FFFFFF;
   padding: 1.5em;
-
 }
 
 span.title {
   font-size: 50px;
+}
+
+
+nav div.new-tweet-toggle {
+  text-align: center;
 }

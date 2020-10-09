@@ -13,19 +13,39 @@ html {
 /*
  * Global layout stuff
  */
-
 body {
+  display: flex;
+  width: 100%;
   color: #545149;
   background-color: #f4f1ec;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
 }
 
-main {
-  width: 90%;
-  margin: auto;
+main.container {
+  width: 50%;
+  margin: 10em 1.5em;
+}
+
+footer div.jump-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
 /*
 * Additional CSS can be defined below or in other CSS files, as per instructions
 */
+
+@media all and (max-width: 1024px) {
+  
+  body {
+    flex-direction: column;
+  }
+  
+  main.container {
+    width: 90%;
+    margin: auto;
+  }
+  
+}

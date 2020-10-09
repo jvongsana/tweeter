@@ -6,6 +6,7 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -19,14 +20,19 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-    <!-- <script type="text/javascript" src="/server/index.js"></script> -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.ico"/>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav class="nav">
+    <nav>
       <span class="title">tweeter</span>
-      <span class="new-tweet">Write a new tweet</span>
+      <div class="new-tweet-toggle">
+        <span>Write a new tweet</span>
+        </br>
+        <img src="images/arrow.png" width="25px" height="25px"> 
+      </div>
     </nav>
     <!-- Page-specific (main) content here -->
     <header>
@@ -37,132 +43,54 @@
       <div class="profile-name">
           <h2>Your Name</h2>
       </div>
-  </header>
-  <main>
-    <section class="new-tweet">
-      <h2>Compose Tweet</h2>
-      <form>
-        <div class="tweet-compose">
-          <textarea name="text" id="tweet-text" placeholder="What are you bumming about?" rows="1"></textarea>
+    </header>
+    <!-- Main container -->
+    <main class="container">
+      <!-- Tweet composing  -->
+      <section class="compose-tweet">
+        <div class="error-message">
+          <p></p>
         </div>
-        <br/>
-        <div class="post-characteristics">
-          <button type="submit" class="tweet-button">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
-        </div>
-      </form>
-    </section>
-    <section>
-      <article class="tweet">
-        <header>
-          <div class="tweeter-pic">
-            <img src="/images/profile-pic.png" alt="User profile picture" width="50px" height="50px">
-            <span>User One</span>
+        <h2>Compose Tweet</h2>
+        <form class="tweet-form">
+          <div class="tweet-compose">
+            <textarea name="text" id="tweet-text" placeholder="What are you humming about?" rows="1"></textarea>
           </div>
-          <span class="username">@UserOne</span>
-        </header>
-        <p class="tweet-content">This is the tweet</p>
-        <footer>
-          <span>9 day ago</span>
-          <div class="interaction-icons">
-            <a href=""><img class="flag-img" src="/images/flag.png" width="25px" height="25px"></a>
-            <a href=""><img class="retweet-img" src="/images/retweet.png" width="25px" height="25px"></a>
-            <a href=""><img class="heart-img" src="/images/heart.png" width="25px" height="25px"></a>
+          <br/>
+          <div class="post-characteristics">
+            <button type="submit" class="tweet-button">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
-        </footer>
-      </article>
-      <article class="tweet">
-        <header>
-          <div class="tweeter-pic">
-            <img src="/images/profile-pic.png" alt="User profile picture" width="50px" height="50px">
-            <span>User One</span>
-          </div>
-          <span class="username">@UserOne</span>
-        </header>
-        <p class="tweet-content">This is the tweet</p>
-        <footer>
-          <span>9 day ago</span>
-          <div class="interaction-icons">
-            <a href=""><img class="flag-img" src="/images/flag.png" width="25px" height="25px"></a>
-            <a href=""><img class="retweet-img" src="/images/retweet.png" width="25px" height="25px"></a>
-            <a href=""><img class="heart-img" src="/images/heart.png" width="25px" height="25px"></a>
-          </div>
-        </footer>
-      </article>
-      <article class="tweet">
-        <header>
-          <div class="tweeter-pic">
-            <img src="/images/profile-pic.png" alt="User profile picture" width="50px" height="50px">
-            <span>User One</span>
-          </div>
-          <span class="username">@UserOne</span>
-        </header>
-        <p class="tweet-content">This is the tweet</p>
-        <footer>
-          <span>9 day ago</span>
-          <div class="interaction-icons">
-            <a href=""><img class="flag-img" src="/images/flag.png" width="25px" height="25px"></a>
-            <a href=""><img class="retweet-img" src="/images/retweet.png" width="25px" height="25px"></a>
-            <a href=""><img class="heart-img" src="/images/heart.png" width="25px" height="25px"></a>
-          </div>
-        </footer>
-      </article>
-      <article class="tweet">
-        <header>
-          <div class="tweeter-pic">
-            <img src="/images/profile-pic.png" alt="User profile picture" width="50px" height="50px">
-            <span>User One</span>
-          </div>
-          <span class="username">@UserOne</span>
-        </header>
-        <p class="tweet-content">This is the tweet</p>
-        <footer>
-          <span>9 day ago</span>
-          <div class="interaction-icons">
-            <a href=""><img class="flag-img" src="/images/flag.png" width="25px" height="25px"></a>
-            <a href=""><img class="retweet-img" src="/images/retweet.png" width="25px" height="25px"></a>
-            <a href=""><img class="heart-img" src="/images/heart.png" width="25px" height="25px"></a>
-          </div>
-        </footer>
-      </article>
-      <article class="tweet">
-        <header>
-          <div class="tweeter-pic">
-            <img src="/images/profile-pic.png" alt="User profile picture" width="50px" height="50px">
-            <span>User One</span>
-          </div>
-          <span class="username">@UserOne</span>
-        </header>
-        <p class="tweet-content">This is the tweet</p>
-        <footer>
-          <span>9 day ago</span>
-          <div class="interaction-icons">
-            <a href=""><img class="flag-img" src="/images/flag.png" width="25px" height="25px"></a>
-            <a href=""><img class="retweet-img" src="/images/retweet.png" width="25px" height="25px"></a>
-            <a href=""><img class="heart-img" src="/images/heart.png" width="25px" height="25px"></a>
-          </div>
-        </footer>
-      </article>
-      <article class="tweet">
-        <header>
-          <div class="tweeter-pic">
-            <img src="/images/profile-pic.png" alt="User profile picture" width="50px" height="50px">
-            <span>User One</span>
-          </div>
-          <span class="username">@UserOne</span>
-        </header>
-        <p class="tweet-content">This is the tweet</p>
-        <footer>
-          <span>9 day ago</span>
-          <div class="interaction-icons">
-            <a href=""><img class="flag-img" src="/images/flag.png" width="25px" height="25px"></a>
-            <a href=""><img class="retweet-img" src="/images/retweet.png" width="25px" height="25px"></a>
-            <a href=""><img class="heart-img" src="/images/heart.png" width="25px" height="25px"></a>
-          </div>
-        </footer>
-      </article>
-    </section>
-  </main>
-    <main class="container"></main>
+        </form>     
+      </section>
+      <!-- Tweet Conatiner -->
+      <section id="tweets-container">
+        <!-- Lay out of indiviual tweet HTML -->
+        <!-- <article class="tweet">
+          <header>
+            <div class="tweeter-pic">
+              <img src="https://i.imgur.com/73hZDYK.png" alt="User profile pic">
+              <span class="name">Newton</span>
+            </div>
+            <span class="username">@SirIsaac</span>
+          </header>
+          <p class="tweet-content">If I have seen further it is by standing on the shoulders of giants</p>
+          <footer>
+            <span>1632 days ago</span>
+            <div class="interaction-icons">
+              <a href=""><img class="flag-img" src="/images/flag.png" style="width: 25px; height: 25px;"></a>
+              <a href=""><img class="retweet-img" src="/images/retweet.png" style="width: 25px; height: 25px;"></a>
+              <a href=""><img class="heart-img" src="/images/heart.png" style="width: 25px; height: 25px;"></a>
+            </div>
+          </footer>
+        </article> -->
+      </section>
+    </main>
+    <!-- Footer (Jump to top of page arrow) -->
+    <footer>
+      <div class="jump-to-top">
+        <img src="images/to top.png" width="50px" height="50px">
+      </div>
+    </footer>
   </body>
 </html>
