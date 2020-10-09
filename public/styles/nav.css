@@ -20,3 +20,13 @@ span.title {
 nav div.new-tweet-toggle {
   text-align: center;
 }
+
+
+
+@media all and (max-width: 1024px) {
+  
+  nav {
+    background-image: url("../images/background-img.png");
+  }
+  
+}
