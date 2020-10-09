@@ -15,3 +15,17 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- Chance
+- Body-parser
+- MD5
+
+## Final Product
+
+!["Screenshot of the default look"](https://github.com/jvongsana/tweeter/blob/master/docs/default-look.png)
+!["Screenshot of the tweet hover effect"](https://github.com/jvongsana/tweeter/blob/master/docs/tweet-hover-effect.png)
+!["Screenshot of toggling the compose form"](https://github.com/jvongsana/tweeter/blob/master/docs/toggle-tweet-form.png)
+!["Screenshot of empty tweet submission"](https://github.com/jvongsana/tweeter/blob/master/docs/empty-error-tweet.png)
+!["Screenshot of exceeding character limit submission"](https://github.com/jvongsana/tweeter/blob/master/docs/exceed-char-tweet.png)
+!["Screenshot of new tweet posted"](https://github.com/jvongsana/tweeter/blob/master/docs/tweet-posted.png)
+!["Screenshot of responsive page"](https://github.com/jvongsana/tweeter/blob/master/docs/responsiveness.png)
+!["Screenshot of responsive page with toggling compose form"](https://github.com/jvongsana/tweeter/blob/master/docs/responsive-form-toggle.png)
